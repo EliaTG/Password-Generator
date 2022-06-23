@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D1D5DB;
+    font-family: 'Roboto', sans-serif; 
+}
+.container{
+   background-color: white;
+   border-radius: 2px;
+   padding: 30px 35px 30px 35px;
+   box-shadow: -4px -1px 64px 6px rgba(0,0,0,0.55);
+   height: 40vh;
+   width: 500px;
+}
+h1{
+    color: #273549;
+    margin: 5px;
+    font-size: 40px;
+}
+p{
+    color: #6B7280;
+    margin: 10px 5px;
+    font-size: 18px;
+}
+.title-span{
+    color: #10B981;
+}
+#btn-generator{
+    display: block;
+    color: white;
+    background: #10B981;
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    margin: 20px 5px;
+    transition: transform 200ms;
+}
+#btn-generator:active {
+    transform: scale(0.98);
+}
+.line{
+    width: 95%!important;
+    height: 1px;
+    background: #D5D4D8;
+    border: 0;
+    margin: 10px 5px;
+}
+.pass-box {
+    color: #10B981;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 5px;
+}   
+.box{
+    background-color: #273549;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+}
+.box-one{
+    margin: 0 5px 0 0;
+
+}
+.box-two{
+    margin: 0 0 0 5px;
+
+}
+#pass-one, #pass-two{
+    background-color: transparent;
+    color: #10B981;
+    padding: 5px 3px;
+    font-size: 16px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+} 
+::placeholder{
+    color: #10B981;
+}
+#pass-one, #pass-two{
+    margin: 0;
+}
+
+.copy-png{
+    height: 20px;
+    cursor: pointer;
+    margin: auto 10px auto 5px;
+     transition: transform 200ms;
+}
+.copy-png:active {
+    transform: scale(0.90);
+}
+
+/*  Tablet */
+@media screen and (max-width: 992px) {
+    .container{
+        height: auto;
+        width: 450px;
+     }
+     h1{
+        color: #273549;
+        margin: 5px;
+        font-size: 35px;
+    }
+    #pass-one, #pass-two{
+        width: 150px;
+        font-size: 15px;
+        height: 22px;
+    } 
+}  
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .container{
+    height: auto;
+    width: 80vw;
+    padding: 20px 25px 20px 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .pass-box {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 5px;
+    } 
+    #pass-one, #pass-two{
+        width: 160px;
+        height: 20px;
+        font-size: 16px;
+        margin: auto 15px;
+    } 
+    .box-one,.box-two{
+        width: 100%;
+        text-align: center;
+        margin: 5px 0 5px 0;
+    
+    }
+    .copy-png{
+        margin:10px 20px 10px auto;
+    }
+}
+
+

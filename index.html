@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Generate a <br> <span class="title-span">random password</span> </h1>
+            <p>Never use an insecure password again.</p>
+            <button id="btn-generator" onclick="Generate()">Generate passwords</button>
+            <div class="line"></div>
+            <div class="pass-box">
+                <div class="box box-one">
+                    <input type="text" id="pass-one"  placeholder=">nfJjy!dDvR&ial" disabled>
+                    <img  class="copy-png" src="copy.png" alt="Copy Password"  onclick="passOneCopy()" >
+                </div>
+                <div class="box box-two">
+                    <input type="text" id="pass-two"  placeholder="egxWij@veiPUwK" disabled>
+                    <img  class="copy-png" onclick="passTwoCopy()" class="copy-svg" src="copy.png" alt="Copy Password">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>   
+</body>
+</html>
